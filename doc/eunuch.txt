@@ -38,6 +38,10 @@ COMMANDS                                        *eunuch-commands*
 :Locate[!] {args}       Run `locate` and load the results into the quickfix
 			list.  Jump to the first result unless ! is given.
 
+                        *eunuch-:Spotlight*
+:Spotlight[!] {args}    Run `mdfind` and load the results into the quickfix
+			list.  Jump to the first result unless ! is given.
+
                                                 *eunuch-:SudoWrite*
 :SudoWrite              Use sudo to write the file to disk.  Handy when you
 			forgot to use sudo to invoke Vim.

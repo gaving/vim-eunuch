@@ -29,6 +29,7 @@ command! -bar -nargs=1 -bang -complete=file Rename :
 
 command! -bar -bang -complete=file -nargs=+ Find   :call s:Grep(<q-bang>, <q-args>, 'find')
 command! -bar -bang -complete=file -nargs=+ Locate :call s:Grep(<q-bang>, <q-args>, 'locate')
+command! -bar -bang -complete=file -nargs=+ Spotlight :call s:Grep(<q-bang>, <q-args>, 'mdfind')
 function! s:Grep(bang,args,prg) abort
   let grepprg = &l:grepprg
   let grepformat = &l:grepformat
